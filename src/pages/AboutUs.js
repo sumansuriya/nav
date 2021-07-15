@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 import { updateRenderAction } from "../redux/EmployeeReducer";
 import logo from "../logo15.png";
 import { signOutAction } from "../redux/UserReducer";
-
+import background from "../image27.jpeg";
 
 
 function AboutUs(){
@@ -33,7 +33,15 @@ const clearEmployeeURef = () => {
     history.push("/employee-task-add");
   };
     return(
+     < div
+      style={{ height: "100vh",
+      backgroundImage: `url(${background})`, 
+      backgroundSize:"",
+      backgroundRepeat:"no-repeat" }}> 
+     
         <div>
+           
+
         <div>
         <Navbar bg="dark" variant="dark" expand="">
         <img align="left" src={logo} height="5%" width="5%" />
@@ -80,9 +88,7 @@ const clearEmployeeURef = () => {
        
       </Navbar>
       </div>
-      <div className= "text-light">
-      <center><h1>Welcome to Task Management System
-      </h1></center>
+     
       </div>
       </div>
       );

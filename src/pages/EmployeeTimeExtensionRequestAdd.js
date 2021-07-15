@@ -139,9 +139,9 @@ export const EmployeeTimeExtensionRequestAdd = () => {
       </div>
       <div className="alert alert-secondary">
         {state.employeeRequest.uref.requestid ? (
-          <h5>Employee Request Update</h5>
+         <center> <h5>Employee Request Update</h5></center>
         ) : (
-          <h5>Employee Request Create</h5>
+          <center> <h5>Employee Request Create</h5></center>
         )}
       </div>
 

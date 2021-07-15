@@ -179,11 +179,11 @@ export const EmployeeAdd = () => {
       </div>
       <div className="alert alert-secondary">
         {state.employee.uref.empid ? (
-          <h5>Employee Update</h5>
+         <center> <h5>Employee Update</h5></center>
         ) : (
-        
+          <center>
             <h5>Employee Create</h5>
-         
+            </center>
         )}
       </div>
 

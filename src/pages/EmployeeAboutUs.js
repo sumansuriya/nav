@@ -5,6 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 import { updateRenderAction } from "../redux/EmployeeReducer";
 import logo from "../logo15.png";
 import { signOutAction } from "../redux/UserReducer";
+import background from "../image30.jpeg";
 function EmployeeAboutUs(){
   const signOut = () => {
     // Logical Operation.
@@ -25,7 +26,10 @@ const clearEmployeeRequestURef = () => {
     history.push("/employee-leave-request-add");
   };
     return(
-        <div>
+        <div  style={{ height: "100vh",
+        backgroundImage: `url(${background})`, 
+        backgroundSize:"100%",
+        backgroundRepeat:"no-repeat" }}>
         <div>
         <Navbar bg="dark" variant="dark" expand="">
         <img align="left" src={logo} height="5%" width="5%" />
@@ -55,10 +59,7 @@ const clearEmployeeRequestURef = () => {
        
       </Navbar>
       </div>
-      <div className= "text-light">
-      <center><h1>Welcome to Task Management System
-      </h1></center>
-      </div>
+      
       </div>
       );
  

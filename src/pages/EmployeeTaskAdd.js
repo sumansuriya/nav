@@ -149,9 +149,11 @@ export const EmployeeTaskAdd = () => {
       </div>
       <div className="alert alert-secondary">
         {state.employeeTask.uref.taskId ? (
-          <h5>Employee Task Update</h5>
+         <center> <h5>Employee Task Update</h5></center>
         ) : (
+          <center>
           <h5>Employee Task Create</h5>
+          </center>
         )}
       </div>
 

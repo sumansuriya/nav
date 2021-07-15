@@ -140,9 +140,9 @@ export const EmployeeLeaveRequestAdd = () => {
       </div>
     <div className="alert alert-secondary">
       {state.employeeLeaveRequest.uref.requestid ? (
-        <h5>Employee Leave Request Update</h5>
+       <center> <h5>Employee Leave Request Update</h5></center>
       ) : (
-        <h5>Employee Leave Request Create</h5>
+        <center><h5>Employee Leave Request Create</h5></center>
       )}
     </div>
 
